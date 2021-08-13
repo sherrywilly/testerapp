@@ -24,7 +24,9 @@
           });
     </script>
     <body style="margin : 0px; overflow: hidden;">
-        <a-scene embedded   arjs='sourceType: webcam;' renderer='antialias: true; alpha: true; precision: medium;'>
+        <a-scene   vr-mode-ui="enabled: false;"
+        renderer='antialias: true; alpha: true; precision: mediump;'
+        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
         
         
             <a-assets>
