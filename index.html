@@ -51,9 +51,9 @@
             <div>Loading, please wait...</div>
         </div>
         <a-scene
-            vr-mode-ui="enabled: false;"
+            vr-mode-ui="enabled: true;"
             renderer='antialias: true; alpha: true; precision: mediump;'
-            embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+            embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3; sourceType: webcam; '>
     
             <a-assets>
                 <video src="./mov_bbb.mp4"
