@@ -9,9 +9,9 @@
             AFRAME.registerComponent('videohandler', {
                 init: function () {
                     var marker = this.el;
-    
+
                     this.vid = document.querySelector("#vid");
-    
+        
                     marker.addEventListener('markerFound', function () {
                         this.vid.play();
                     }.bind(this));
@@ -69,7 +69,7 @@
             >
                 <a-video
                     src="#vid"
-                    position='50 150 -100'
+                    position='50 150 0'
                     rotation='90 0 180'
                     width='300'
                     height='175'
