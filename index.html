@@ -32,27 +32,18 @@
             <a-assets>
                 <video src="./mov_bbb.mp4"
                     preload="auto" id="vid" response-type="arraybuffer" loop
-                    crossorigin webkit-playsinline autoplay  playsinline controls>
+                    crossorigin webkit-playsinline autoplay  playsinline >
                 </video>
             </a-assets>
             <a-marker preset="hiro">
-            <!-- <a-entity
-            position="0 0 0"
-            rotation="0 0 0"
-            scale="0.05 0.05 0.05"
-            gltf-model="../image-tracking/nft/trex/scene.gltf"
-            ></a-entity> -->
+         
             <a-video
             src="#vid"
            
             rotation='90 180 0'
            
-            
-            
             vidhandler>
         </a-video>
-            <!-- <a-sphere position="0 0.5 0" radius="0.5" color="#EF2D5E"></a-sphere>
-            <a-plane position="0 0 0" rotation="-90 0 0" width="1" height="1" color="#7BC8A4"></a-plane> -->
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
